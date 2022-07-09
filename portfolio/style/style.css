@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.color-blue {
+    color: #2c98f0;
+}
+
+.color-red {
+    color: #ec5453;
+}
+
+.color-yellow {
+    color: #f9bf3f;
+}
+
+.color-purple {
+    color: #a84cb8;
+}
+
+.border-blue {
+    border-bottom: solid 4px #2c98f0;
+}
+
+.border-red {
+    border-bottom: solid 4px #ec5453;
+}
+
+.border-yellow {
+    border-bottom: solid 4px #f9bf3f;
+}
+
+.border-purple {
+    border-bottom: solid 4px #a84cb8;
+}
+
+@media only screen and (min-width: 992px) {
+    #home-page {
+        background-color: #ece2d0;
+    }
+    #inner {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        width: 80%;
+        margin: auto auto;
+    }
+    #my-img {
+        height: 100vh;
+        display: block;
+    }
+    #right {
+        text-align: center;
+        margin-top: 6rem;
+    }
+    h1 {
+        font-size: 10rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        letter-spacing: 10px;
+        color: #243636;
+        animation-name: slideup;
+        opacity: 0;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4rem;
+        letter-spacing: 8px;
+        word-spacing: 9px;
+        padding: 0 3%;
+        color: #2e3030;
+        opacity: 0;
+        animation-name: slideup;
+        animation-duration: 3.4s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        letter-spacing: 8px;
+        word-spacing: 9px;
+        padding: 0 1% 1%;
+        color: rgb(104, 97, 97);
+        opacity: 0;
+        animation-name: slideup;
+        animation-duration: 3.4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    #button-container {
+        width: 50%;
+        /* height: 30%; */
+        margin: 100px auto;
+        animation-name: slideup;
+        opacity: 0;
+        animation-duration: 3.4s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    .buttons {
+        text-align: center;
+        font-size: 1.02rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        width: 250px;
+        height: 50px;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        border: solid 1px #2e3030;
+        background-color: #D5B9B2;
+    }
+    .buttons:hover {
+        border: solid 2.3px #6D2E46;
+    }
+    .fa-file-download {
+        padding: 3%;
+    }
+    #about-me {
+        width: 80%;
+        margin: 50px auto;
+    }
+    h5 {
+        opacity: 0.4;
+        font-size: 1.02rem;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 3.7px;
+        word-spacing: 10px;
+        padding: 10px 10px 10px 0;
+    }
+    h2 {
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        padding: 1% 1% 1% 0;
+        letter-spacing: 4px;
+        word-spacing: 8px;
+    }
+    .about-me-description {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.99rem;
+        line-height: 1.5;
+        letter-spacing: 0.6px;
+        word-spacing: 1.2px;
+    }
+    .working-area {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 15px;
+        height: 30vh;
+        margin-top: 3%;
+        text-align: center;
+    }
+    .work-item:hover,
+    .cards:hover {
+        transform: scale3d(1.05, 1.05, 20);
+    }
+    .work-item {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .work-icon {
+        display: block;
+        font-size: 3rem;
+    }
+    #experstise {
+        width: 80%;
+        margin: 80px auto;
+    }
+    .expertise-cards {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 15px;
+        text-align: center;
+    }
+    .cards {
+        margin-top: 17%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 50vh;
+        position: relative;
+    }
+    .cards .fas {
+        font-size: 4rem;
+        position: absolute;
+        top: -45px;
+    }
+    h4 {
+        padding: 16% 0 15%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+    }
+    .exdescription p {
+        padding: 7%;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        word-spacing: 1.3px;
+        line-height: 1.5;
+    }
+    .exdescription {
+        padding-top: 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #myskills {
+        width: 80%;
+        margin: auto auto;
+        height: 70vh;
+    }
+    #myskills p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.12rem;
+        word-spacing: 2px;
+        letter-spacing: 1.4px;
+        padding: 2% 2% 2% 0;
+    }
+    .progress-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 8%;
+        margin: 1.6% 3%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        color: #6e6d69;
+    }
+    .progress-container label {
+        margin-left: 2%;
+    }
+    progress {
+        width: 70%;
+    }
+    #qulification {
+        width: 80%;
+        margin: 7% auto;
+    }
+    .accordion {
+        margin-top: 4%;
+    }
+    #contact-container {
+        width: 80%;
+        margin: 0 auto;
+        height: 80vh;
+    }
+    .conatact-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3% 5%;
+        height: 80%;
+    }
+    .social-media {
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.4rem;
+    }
+    .media-icon {
+        padding: 1%;
+        margin-right: 2%;
+    }
+    .contact-form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    input {
+        width: 90%;
+        height: 8%;
+        padding: 10px;
+        margin: 4%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+    }
+    textarea {
+        width: 90%;
+        height: 20%;
+        padding: 10px;
+        margin: 4%;
+    }
+    .send {
+        width: 50%;
+        padding: 6px;
+        margin: 3%;
+        float: right;
+        border: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        background-color: #808383;
+    }
+    .send:hover {
+        border: solid 2px black;
+    }
+    .send i {
+        margin-right: 5%;
+    }
+    .socialize {
+        text-align: center;
+        font-size: 2rem;
+        margin: 3%;
+    }
+    .socialize i {
+        margin-right: 5%;
+        padding: 2%;
+        border: solid 1px black;
+        border-radius: 100%;
+    }
+    .fa-facebook-f {
+        color: white;
+        background-color: #4267B2;
+    }
+    .fa-instagram {
+        color: white;
+        background-color: #C13584;
+    }
+    .fa-twitter {
+        color: white;
+        background-color: #1DA1F2;
+    }
+    .fa-linkedin-in {
+        color: white;
+        background-color: #2867B2;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #home-page {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #FCDE9C;
+    }
+    #inner {
+        position: relative;
+        text-align: center;
+    }
+    #my-img {
+        /* opacity: 0.17; */
+        animation-name: slideup;
+        animation-duration: 1.8s;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+    }
+    #right {
+        position: absolute;
+        bottom: 50%;
+        left: 20%;
+        right: 20%;
+        top: 15%;
+    }
+    h1 {
+        font-size: 5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        letter-spacing: 10px;
+        color: #381D2A;
+        opacity: 0;
+        animation-name: slideup;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        word-spacing: 9px;
+        padding: 3% 3%;
+        color: #381D2A;
+        font-weight: 500;
+        opacity: 0;
+        animation-name: slideup;
+        animation-duration: 3.4s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.65rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        padding: 0 3%;
+        color: rgb(37, 34, 34);
+        opacity: 0;
+        animation-name: slideup;
+        animation-duration: 3.4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    #button-container {
+        margin: 40% auto;
+        opacity: 0;
+        animation-name: slideup;
+        animation-duration: 3.4s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    .buttons {
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        color: #FFA552;
+        border: solid 1px black;
+        background-color: #381D2A;
+    }
+    .buttons:hover {
+        border: solid 2.3px #6D2E46;
+    }
+    .fa-file-download {
+        padding: 3%;
+    }
+}
+
+
+/* animations area */
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animatebutton {
+    from {
+        margin-bottom: 0;
+    }
+    to {
+        margin-top: 100px;
+    }
+}
